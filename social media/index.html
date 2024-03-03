@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Social Media</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-----------------nav baar--------------------->
+  <div class="">
+    <nav>
+
+      <div class="nav-container">
+
+        <div class="logo">
+          <h3>Social <span>media</span></h3>
+        </div>
+
+        <div class="search-bar"><i class="ri-search-line"></i>
+          <input type="search" placeholder="Search for creator">
+        </div>
+
+        <div class="add">
+          <label class="btn1 mini-btn" for="add-post"> Add Post </label>
+          <div class="nav-pic" id="my-pro-pics">
+            <img src="assets/my pic.jpg">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-------------------sidebar -------------------->
+    <main class="container">
+      <div class="container main-container">
+        <div class="sidebar">
+          <!--------- profile part ------------>
+          <div class="profile">
+            <div class="side-pic" id="my-pro-pics">
+              <img src="assets/my pic.jpg">
+            </div>
+            <div style="line-height: 1px; margin-top: 8px;">
+              <h5>Nusrat</h5>
+              <p>@itsnusrat</p>
+            </div>
+          </div>
+          <!-- -----------side nave bar------------>
+
+          <div class="sideNav">
+            <a class="side_n active"><span><i class="ri-home-4-line"></i></span>
+              <h3>Home</h3>
+            </a>
+            <a class="side_n"><span><i class="ri-notification-3-line"></i></span>
+              <small class="notfy-counter">6+</small>
+              <h3>Notification</h3>
+
+              <!----------- notification box --------->
+              <div class="notify-box">
+                <div>
+                  <div class="pro-pic">
+                    <img src="assets/profile-2.jpg" alt="">
+                  </div>
+                  <div class="notify-body">
+                    <b>Ayat</b> accepted your friend request
+                    <small class="text-gry">1 Day Ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="pro-pic">
+                    <img src="assets/profile-4.jpeg" alt="">
+                  </div>
+                  <div class="notify-body">
+                    <b>Hayat</b> accepted your friend request
+                    <small class="text-gry">1 Day Ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="pro-pic">
+                    <img src="assets/profile-5.jpeg" alt="">
+                  </div>
+                  <div class="notify-body">
+                    <b>Ayat</b> accepted your friend request
+                    <small class="text-gry">2 Day Ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="pro-pic">
+                    <img src="assets/profile-4.jpeg" alt="">
+                  </div>
+                  <div class="notify-body">
+                    <b>Ayat</b> accepted your friend request
+                    <small class="text-gry">1 Day Ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="pro-pic">
+                    <img src="assets/profile-4.jpeg" alt="">
+                  </div>
+                  <div class="notify-body">
+                    <b>Ayat</b> accepted your friend request
+                    <small class="text-gry">1 Day Ago</small>
+                  </div>
+                </div>
+              </div>
+
+            </a>
+            <a class="side_n"><span><i class="ri-message-2-line"></i></span>
+              <small class="notfy-counter">4+</small>
+              <h3>Message</h3>
+            </a>
+            <a class="side_n"><span><i class="ri-bookmark-line"></i></span>
+              <h3>Save</h3>
+            </a>
+            <a class="side_n"><span><i class="ri-palette-line"></i></span>
+              <h3>Theme</h3>
+            </a>
+            <a class="side_n"><span><i class="ri-settings-5-line"></i></span>
+              <h3>Settings</h3>
+            </a>
+
+            <label class="btn1 btn-lg" id="add-post">Create A Post</label>
+          </div>
+        </div>
+
+        <!-- --------------------main section ----------------->
+        <!-- -------story part ----------->
+
+        <div class="main">
+          <div class="outer-story swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="story swiper-slide">
+                <img src="" alt="">
+                <div class="pro-pic" id="my-pro-pics">
+                  <img src="assets/my image.jpg" alt="">
+                </div>
+                <label for="add-story" class="add-story">
+                  <i class="ri-add-fill"></i>
+                  <p>Add Your <br> Story</p>
+                </label>
+                <input type="file" accept="image/jpg,image/png,image/jpeg" id="add-story">
+              </div>
+              <div class="story  swiper-slide">
+                <img src="assets/story profile-4.jpg" alt="">
+                <div class="pro-pic" id="my-pro-pic">
+                  <img src="assets/profile-2.jpg" alt="">
+                </div>
+                <p>Nusrat</p>
+              </div>
+              <div class="story  swiper-slide">
+                <img src="assets/story profile-5.jpg" alt="">
+                <div class="pro-pic" id="my-pro-pic">
+                  <img src="assets/profile-4.jpeg" alt="">
+                </div>
+                <p>Samra khan</p>
+              </div>
+              <div class="story  swiper-slide">
+                <img src="assets/story profile-2.jpg" alt="">
+                <div class="pro-pic" id="my-pro-pic">
+                  <img src="assets/profile-5.jpeg" alt="">
+                </div>
+                <p>Sameer Ali</p>
+              </div>
+              <div class="story  swiper-slide">
+                <img src="assets/story profile-3.jpeg" alt="">
+                <div class="pro-pic" id="my-pro-pic">
+                  <img src="assets/profile-3.jpg" alt="">
+                </div>
+                <p>Zain khan</p>
+              </div>
+              <div class="story  swiper-slide">
+                <img src="assets/story profile-6.jpeg" alt="">
+                <div class="pro-pic" id="my-pro-pic">
+                  <img src="assets/profile-6.jpg" alt="">
+                </div>
+                <p>Radhika kumari</p>
+              </div>
+              <div class="story  swiper-slide">
+                <img src="assets/story profile-1.jpg" alt="">
+                <div class="pro-pic" id="my-pro-pic">
+                  <img src="assets/profile-1.jpg" alt="">
+                </div>
+                <p>Aman</p>
+              </div>
+              <div class="story  swiper-slide">
+                <img src="assets/request pic-4.jpg" alt="">
+                <div class="pro-pic" id="my-pro-pic">
+                  <img src="assets/post pic.jpg" alt="">
+                </div>
+                <p>Aman</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!--=------------- post input  ---------->
+
+          <form class="main-search input-post">
+            <div class="pro-pic1" id="my-pro-pics">
+              <img src="assets/my pic.jpg">
+            </div>
+            <input type="text" placeholder="What's on Your mind ?" id="add-post">
+            <input type="submit" value="post" class="btn">
+          </form>
+
+          <div class="posts">
+            <div class="post">
+              <div class="post-top">
+                <div class="user">
+                  <div class="pro-pic1" style="display: flex;"> <img src="assets/my pic.jpg">
+                  </div>
+                  <div class="info">
+                    <h6>Nusrat </h6>
+                    <div class="text-gry">
+                      <small> Hyderabad, <span>1 day ago</span></small>
+                    </div>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="ri-more-fill"></i>
+                  <ul class="edit-menu">
+                    <li><i class="ri-pencil-fill"></i>Edit</li>
+                    <li><i class="ri-delete-bin-fill"></i>Delete</li>
+                  </ul>
+                </span>
+              </div>
+              <div class="post-img" id="create-lg">
+                <img src="assets/my post pic2.jpg" alt="">
+              </div>
+              <div class="action-button">
+                <div class="">
+                  <span><i class="ri-heart-fill"></i></span>
+                  <span><i class="ri-chat-3-line"></i> </span>
+                  <span><i class="ri-links-line"></i></span>
+                </div>
+                <div class="bookmark">
+                  <i class="ri-bookmark-line"></i>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="assets/request pic-3.jpg" alt=""></span>
+                <span><img src="assets/request pic-1.webp" alt=""></span>
+                <span><img src="assets/request pic-4.jpg" alt=""></span>
+                <p>Liked by <b>David mark</b> and <b>40 comment</b></p>
+              </div>
+
+              <div>
+                <div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repudiandae quam
+                  commodi vero odit aperiam error. Praesentium eius aperiam labore!</div>
+                <p><b>Lana White </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  <span class="hars-tag">#lifestyle</span>
+                </p>
+              </div>
+
+              <div class="comments text-gry">
+                View all comment
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="post-top">
+                <div class="user">
+                  <div class="pro-pic1" style="display: flex;"><img src="assets/profile-4.jpeg">
+                  </div>
+                  <div class="info">
+                    <h6>Afzal Habib</h6>
+                    <div class="text-gry">
+                      <small> Hyderabad, <span>1 day ago</span></small>
+                    </div>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="ri-more-fill"></i>
+                  <ul class="edit-menu">
+                    <li><i class="ri-pencil-fill"></i>Edit</li>
+                    <li><i class="ri-delete-bin-fill"></i>Delete</li>
+                  </ul>
+                </span>
+              </div>
+              <div class="post-img">
+                <img src="assets/story profile-2.jpg" alt="">
+              </div>
+              <div class="action-button">
+                <div class="">
+                  <span><i class="ri-heart-fill"></i></span>
+                  <span><i class="ri-chat-3-line"></i> </span>
+                  <span><i class="ri-links-line"></i></span>
+                </div>
+                <div class="bookmark">
+                  <i class="ri-bookmark-line"></i>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="assets/request pic-3.jpg" alt=""></span>
+                <span><img src="assets/request pic-1.webp" alt=""></span>
+                <span><img src="assets/request pic-4.jpg" alt=""></span>
+                <p>Liked by <b>David mark</b> and <b>40 comment</b></p>
+              </div>
+
+              <div>
+                <div class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni corporis deserunt non
+                  asperiores dolorum autem ducimus ratione iste, explicabo recusandae.</div>
+                <p><b>Lana White </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  <span class="hars-tag">#lifestyle</span>
+                </p>
+              </div>
+
+              <div class="comments text-gry">
+                View all comment
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="post-top">
+                <div class="user">
+                  <div class="pro-pic1" style="display: flex;"><img src="assets/story profile-5.jpg">
+                  </div>
+                  <div class="info">
+                    <h6>Afzal Habib</h6>
+                    <div class="text-gry">
+                      <small> Hyderabad, <span>1 day ago</span></small>
+                    </div>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="ri-more-fill"></i>
+                  <ul class="edit-menu">
+                    <li><i class="ri-pencil-fill"></i>Edit</li>
+                    <li><i class="ri-delete-bin-fill"></i>Delete</li>
+                  </ul>
+                </span>
+              </div>
+              <div class="post-img">
+                <img src="assets/post pic-3.jpg" alt="">
+              </div>
+              <div class="action-button">
+                <div class="">
+                  <span><i class="ri-heart-fill"></i></span>
+                  <span><i class="ri-chat-3-line"></i> </span>
+                  <span><i class="ri-links-line"></i></span>
+                </div>
+                <div class="bookmark">
+                  <i class="ri-bookmark-line"></i>
+                </div>
+              </div>
+
+
+              <div class="liked-by">
+                <span><img src="assets/request pic-3.jpg" alt=""></span>
+                <span><img src="assets/request pic-1.webp" alt=""></span>
+                <span><img src="assets/request pic-4.jpg" alt=""></span>
+                <p>Liked by <b>David mark</b> and <b>40 comment</b></p>
+              </div>
+
+              <div>
+                <div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsa. Expedita unde
+                  esse a commodi laboriosam illo fugit mollitia beatae!</div>
+                <p><b>Lana White </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  <span class="hars-tag">#lifestyle</span>
+                </p>
+              </div>
+
+              <div class="comments text-gry">
+                View all comment
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="post-top">
+                <div class="user">
+                  <div class="pro-pic1" style="display: flex;"><img src="assets/story profile-1.jpg">
+                  </div>
+                  <div class="info">
+                    <h6>Afzal Habib</h6>
+                    <div class="text-gry">
+                      <small> Hyderabad, <span>1 day ago</span></small>
+                    </div>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="ri-more-fill"></i>
+                  <ul class="edit-menu">
+                    <li><i class="ri-pencil-fill"></i>Edit</li>
+                    <li><i class="ri-delete-bin-fill"></i>Delete</li>
+                  </ul>
+                </span>
+              </div>
+              <div class="post-img">
+                <img src="assets/post pic.avif" alt="">
+              </div>
+              <div class="action-button">
+                <div class="">
+                  <span><i class="ri-heart-fill"></i></span>
+                  <span><i class="ri-chat-3-line"></i> </span>
+                  <span><i class="ri-links-line"></i></span>
+                </div>
+                <div class="bookmark">
+                  <i class="ri-bookmark-line"></i>
+                </div>
+              </div>
+
+
+              <div class="liked-by">
+                <span><img src="assets/request pic-3.jpg" alt=""></span>
+                <span><img src="assets/request pic-1.webp" alt=""></span>
+                <span><img src="assets/request pic-4.jpg" alt=""></span>
+                <p>Liked by <b>David mark</b> and <b>40 comment</b></p>
+              </div>
+
+              <div>
+                <div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo autem natus est
+                  praesentium accusamus inventore error quidem laboriosam voluptate doloribus.</div>
+                <p><b>Lana White </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  <span class="hars-tag">#lifestyle</span>
+                </p>
+              </div>
+
+              <div class="comments text-gry">
+                View all comment
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="post-top">
+                <div class="user">
+                  <div class="pro-pic1" style="display: flex;"><img src="assets/story profile-4.jpg">
+                  </div>
+                  <div class="info">
+                    <h6>Afzal Habib</h6>
+                    <div class="text-gry">
+                      <small> Hyderabad, <span>1 day ago</span></small>
+                    </div>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="ri-more-fill"></i>
+                  <ul class="edit-menu">
+                    <li><i class="ri-pencil-fill"></i>Edit</li>
+                    <li><i class="ri-delete-bin-fill"></i>Delete</li>
+                  </ul>
+                </span>
+              </div>
+              <div class="post-img">
+                <img src="assets/post pic.jpg" alt="">
+              </div>
+              <div class="action-button">
+                <div class="">
+                  <span><i class="ri-heart-fill"></i></i></span>
+                  <span><i class="ri-chat-3-line"></i> </span>
+                  <span><i class="ri-links-line"></i></span>
+                </div>
+                <div class="bookmark">
+                  <i class="ri-bookmark-line"></i>
+                </div>
+              </div>
+
+
+              <div class="liked-by">
+                <span><img src="assets/request pic-3.jpg" alt=""></span>
+                <span><img src="assets/request pic-1.webp" alt=""></span>
+                <span><img src="assets/request pic-4.jpg" alt=""></span>
+                <p>Liked by <b>David mark</b> and <b>40 comment</b></p>
+              </div>
+
+              <div>
+                <div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis natus at possimus,
+                  atque quidem id. Repudiandae saepe deleniti hic tenetur.</div>
+                <p><b>Lana White </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  <span class="hars-tag">#lifestyle</span>
+                </p>
+              </div>
+
+              <div class="comments text-gry">
+                View all comment
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="message">
+          <div class="inner-msg">
+            <div>
+              <h5 style="padding: 20px;">Message <i class="ri-kakao-talk-line "
+                  style="float: right; font-size: xx-large; "></i></h5>
+            </div>
+            <form class="d-flex sea" role="search">
+              <div class="search-m"><i class="ri-search-line"></i></div>
+              <input class=" search3 me-2" type="search" placeholder="Search for creator" aria-label="Search">
+            </form>
+            <div class="mgs_bar">
+              <h6 class="active">primary</h6>
+              <h6 class="N_msgbar">general</h6>
+              <h6 class="N_msgbar">request</h6>
+            </div>
+            <div class="chat" style="display: flex; margin-top: 20px;"><img src="assets/profile-1.jpg" width="35"
+                height="35">
+              <div style=" padding-left: 20px; line-height: 2px; ">
+                <h6>Nusrat</h6>
+                <p>hiii how are u</p>
+              </div>
+            </div>
+            <div class="chat" style="display: flex; ;"><img src="assets/profile-4.jpeg" width="35" height="35">
+              <div style=" padding-left: 20px; line-height: 2px; ">
+                <h6>Ayan</h6>
+                <p>hiii how are u</p>
+              </div>
+            </div>
+            <div class="chat" style="display: flex;"><img src="assets/profile-2.jpg" width="35" height="35">
+              <div style=" padding-left: 20px; line-height: 2px; ">
+                <h6>Sana parween</h6>
+                <p>hiii how are u</p>
+              </div>
+            </div>
+            <div class="chat" style="display: flex;"><img src="assets/profile-5.jpeg" width="35" height="35">
+              <div style=" padding-left: 20px; line-height: 2px; ">
+                <h6>Afzal</h6>
+                <p>hiii how are u</p>
+              </div>
+            </div>
+            <div class="chat" style="display: flex;"><img src="assets/profile-3.jpg" width="35" height="35">
+              <div style=" padding-left: 20px; line-height: 2px; ">
+                <h6>Zeenat </h6>
+                <p>hiii how are u</p>
+              </div>
+            </div>
+          </div>
+
+          <h5 style="margin-top: 25px; margin-bottom: 25px; color: gray;">Request</h5>
+          <div class="request">
+            <div class="pro1"><img src="assets/request pic-1.webp" width="44" height="44">
+              <div style=" padding-left: 20px; line-height: 5px;">
+                <h5>Mahira</h5>
+                <p style="color: rgb(173, 168, 168);">4 manual friend</p>
+                <small class="text-gry alert">You have accepted friend request</small>
+              </div>
+            </div>
+            <div>
+              <button style="background-color: rgb(238, 165, 177)">accept</button>
+              <button style="background-color: rgb(238, 44, 44);">Delete</button>
+            </div>
+          </div>
+          <div class="request">
+            <div class="pro1"><img src="assets/request pic-3.jpg" width="44" height="44">
+              <div style=" padding-left: 20px; line-height: 5px;">
+                <h5>shanaya</h5>
+                <p style="color: rgb(173, 168, 168);">4 manual friend</p>
+                <small class="text-gry alert">You have accepted friend request</small>
+              </div>
+            </div>
+            <div>
+              <button style="background-color: rgb(238, 165, 177)">accept</button>
+              <button style="background-color: rgb(238, 44, 44);">Delete</button>
+            </div>
+          </div>
+          <div class="request">
+            <div class="pro1"><img src="assets/request pic-2.jpg" width="44" height="44">
+              <div style=" padding-left: 20px; line-height: 5px;">
+                <h5>Hayat Ali</h5>
+                <p style="color: rgb(173, 168, 168);">4 manual friend</p>
+                <small class="text-gry alert">You have accepted friend request</small>
+              </div>
+            </div>
+            <div>
+              <button style="background-color: rgb(238, 165, 177)">accept</button>
+              <button style="background-color: rgb(238, 44, 44);">Delete</button>
+            </div>
+          </div>
+          <div class="request">
+            <div class="pro1"><img src="assets/request pic-4.jpg" width="44" height="44">
+              <div style=" padding-left: 20px; line-height: 5px;">
+                <h5>Shayan </h5>
+                <p style="color: rgb(173, 168, 168);">4 manual friend</p>
+                <small class="text-gry alert">You have accepted friend request</small>
+              </div>
+            </div>
+            <div>
+              <button style="background-color: rgb(238, 165, 177)">accept</button>
+              <button style="background-color: rgb(238, 44, 44);">Delete</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <!-- // -------------- profile popun -------------- -->
+
+  <div class="popun pro-popun">
+    <div>
+      <div class="popun-box  pro-popun-box">
+        <h1>Nusrat</h1>
+        <p>@nusrat2</p>
+        <div id="my-pro-pics">
+          <img src="assets/my image.jpg" />
+        </div>
+        <label for="profile-uploade" class="btn1 btn-lg">Update Profile Picture</label>
+        <input type="file" accept="image/jpg, image/png, image/jpeg" id="profile-uploade">
+        <button class="btn1 btn-lg">Log Out</button>
+      </div>
+      <span class="close"><i class="ri-close-fill"></i></span>
+    </div>
+  </div>
+
+  <!-- ----------------- add post popun ------------ -->
+
+  <div class="popun add-post-popun">
+    <div>
+      <form class="popun-box add-post-popun">
+        <h1>Add New Post</h1>
+        <div class="row post-title">
+          <label>Title</label>
+          <input type="text" placeholder="What's on your mind ?" id="add-post">
+        </div>
+        <div class="row post-img">
+          <div id="create-lg">
+            <img src="assets/profile_pic.jpg">
+          </div>
+          <label for="post-pic-upload" class="post-upload-btn">
+            <span><i class="ri-add-fill"></i> </span>
+            Upload A Picture
+          </label>
+          <input type="file" accept="image/jpg, image/png, image/jpeg" id="post-pic-upload">
+          <input type="submit" class="btn2" value="Add post">
+        </div>
+      </form>
+      <span class="close"><i class="ri-close-fill"></i></span>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
